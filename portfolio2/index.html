@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Accueil - ma page d'accueil</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+
+<header class="header">
+    <h1 class="hidden">Mon portfolio</h1>
+    <nav class="header__nav nav">
+        <h2 class="nav__title hidden">Naviguation principale</h2>
+        <ul class="nav__container">
+            <li class="container__list">
+                <a href="#sect1"> Accueil</a>
+            </li>
+            <li class="container__list">
+                <a href="#sect2"> A propos</a>
+            </li>
+            <li class="container__list">
+                <a href="#sect3">Mes projets</a>
+            </li>
+            <li class="container__list">
+                <a href="#sect4">Contact</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<section id="sect1" class="layout">
+    <div class="video">
+        <video autoplay="autoplay" muted="" loop="infinite" src="/video/network.mp4"></video>
+        <h2 class="main__title">
+            Felgenhauer Dylan Portfolio
+        </h2>
+    </div>
+</section>
+<section id="sect2" class="about__layout">
+    <h2 class="section__title about__title ">
+        A propos
+    </h2>
+    <div class="imgcontain">
+        <img src="/img/moi.jpg" alt="Photo de Dylan" class="attachment-large">
+        <p class="section__container">
+            Futur développeur web agé de 25ans, je suis surtout passionné dans le design ou tout ce qui concerne le
+            front-end.
+            &Eacute;galement interessé par le javascript, j'aime créer des petits jeux d'arcades durant mon temps libre.
+            Vous voulez en savoir plus? Je vous laisse découvrir mes projets ci dessous, ainsi qu'un CV plus complet.
+            N'hésites pas a me contacter pour plus d'informations, ou encore me laisser un commentaire!
+            Bonne visite &#128513;
+        </p>
+    </div>
+
+</section>
+<section id="sect3" class="project__layout">
+    <h2 class=" project__title">
+        Mes projets
+    </h2>
+    <section class="flex__project">
+        <h3 class="hidden">Les projets</h3>
+
+        <section class="project__container">
+            <h3 class="project--container__title">Mon CV</h3>
+            <img src="/img/breedy.png" alt="Mon projet 1" class="project--container__image">
+            <p class="project--container__explain">Site internet existant (Breedy) personnalisé pour en faire mon
+                Curriculum Vitae. Vous voulez en savoir un peu plus sur moi? N'hésitez pas à venir y faire un tour
+                ! </p>
+        </section>
+
+        <section class="project__container">
+            <h3 class="project--container__title">Pong Game</h3>
+            <img src="/img/Pong.jpg" alt="Mon projet 2" class="project--container__image">
+            <p class="project--container__explain"></p>
+        </section>
+
+        <section class="project__container">
+            <h3 class="project--container__title">Antilope</h3>
+            <img src="/img/antilope.png" alt="Mon projet 3" class="project--container__image">
+            <p class="project--container__explain"></p>
+
+        </section>
+    </section>
+
+</section>
+<section id="sect4" class="contact__layout">
+    <h2 class="contact__title">Contactez-moi</h2>
+    <div class="contact__form">
+        <form action="#" method="post" class="contact__form">
+            <div class="form__name div__input">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="user_name" required>
+            </div>
+
+            <div class="form__surname div__input">
+                <label for="surname"> Prénom :</label>
+                <input type="text" id="surname" name="user_surname" required>
+            </div>
+
+            <div class="form__mail div__input">
+                <label for="mail"> E-mail&nbsp;:</label>
+                <input type="email" id="mail" name="user_mail" required>
+            </div>
+
+            <div class="form__message div__input">
+                <label for="msg">Message :</label>
+                <textarea id="msg" rows="8" name="user_message" required></textarea>
+            </div>
+            <div class="form__submit">
+                <button type="submit">Envoyer</button>
+            </div>
+            <img class="hidden" src="/img/4046201.jpg" alt="image de fond">
+        </form>
+    </div>
+
+</section>
+</body>
+<script src="/javascript/main.js"></script>
+</html>
